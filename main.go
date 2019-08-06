@@ -56,7 +56,7 @@ func main() {
 		expired := time.Date(groups["year"], time.Month(groups["month"]), groups["day"], groups["hour"], groups["minute"], groups["second"], 0, time.UTC)
 		left := expired.Sub(time.Now())
 		left_days := int(left.Hours() / 24)
-		notify_days := []int{1, 2, 3, 4, 5, 6, 7, 345}
+		notify_days := []int{1, 2, 3, 4, 5, 6, 7, 344, 345}
 		notify := false
 		for i := range notify_days {
 			if notify_days[i] == left_days {
